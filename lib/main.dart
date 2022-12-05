@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:review_islamic_mahammed_hamooda/home.dart';
+import 'package:review_islamic_mahammed_hamooda/my_theme.dart';
 
 void main() {
   runApp( MyApplication());
@@ -14,8 +15,11 @@ class MyApplication extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: HomePage.routeName,
       routes: {
-        HomePage.routeName : (context)=>HomePage(),
+        HomePage.routeName: (context) => HomePage(),
       },
+      theme: MyThemeData.lightTheme,
+      darkTheme: MyThemeData.darkTheme,
+      themeMode: ThemeMode.light,
     );
   }
 }
