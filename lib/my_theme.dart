@@ -21,7 +21,9 @@ class MyThemeData {
           fontWeight: FontWeight.bold,
           color: colorGold,
         ),
-      ));
+      ),
+      bottomNavigationBarTheme:
+          BottomNavigationBarThemeData(backgroundColor: colorGold));
 
   static ThemeData darkTheme = ThemeData(
       scaffoldBackgroundColor: Colors.transparent,
