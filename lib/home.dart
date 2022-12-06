@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:review_islamic_mahammed_hamooda/moshaf_screen.dart';
 import 'package:review_islamic_mahammed_hamooda/my_theme.dart';
-import 'package:review_islamic_mahammed_hamooda/quran_screen.dart';
+import 'package:review_islamic_mahammed_hamooda/home_screen/quran_screen.dart';
 import 'package:review_islamic_mahammed_hamooda/radio_screen.dart';
 import 'package:review_islamic_mahammed_hamooda/sebha_screen.dart';
 
@@ -70,7 +70,7 @@ class _HomePageState extends State<HomePage> {
                   AssetImage('assets/images/moshaf_blue.png'),
                   size: 30,
                 ),
-                label: 'Moshaf',
+                label: 'َQuran',
               ),
             ],
           ),
@@ -79,7 +79,6 @@ class _HomePageState extends State<HomePage> {
       ],
     );
   }
-
   List<Widget> screens = [
     QuranScreen(),
     SebhaScreen(),
