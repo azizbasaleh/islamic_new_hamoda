@@ -5,6 +5,8 @@ import 'package:review_islamic_mahammed_hamooda/home_screen/quran_screen.dart';
 import 'package:review_islamic_mahammed_hamooda/radio_screen.dart';
 import 'package:review_islamic_mahammed_hamooda/sebha_screen.dart';
 
+import 'home_screen/ahadeth.dart';
+
 class HomePage extends StatefulWidget {
   static const String routeName = 'home';
 
@@ -56,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                   AssetImage('assets/images/sebha_blue.png'),
                   size: 30,
                 ),
-                label: 'Quran',
+                label: 'Sebha',
               ),
               BottomNavigationBarItem(
                 icon: ImageIcon(
@@ -70,7 +72,14 @@ class _HomePageState extends State<HomePage> {
                   AssetImage('assets/images/moshaf_blue.png'),
                   size: 30,
                 ),
-                label: 'َQuran',
+                label: 'Moshaf',
+              ),
+              BottomNavigationBarItem(
+                icon: ImageIcon(
+                  AssetImage('assets/images/moshaf_blue.png'),
+                  size: 30,
+                ),
+                label: 'Ahadeth',
               ),
             ],
           ),
@@ -84,5 +93,6 @@ class _HomePageState extends State<HomePage> {
     SebhaScreen(),
     RadioScreen(),
     MoshafScreen(),
+    AhadethTab(),
   ];
 }

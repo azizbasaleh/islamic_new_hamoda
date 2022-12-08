@@ -55,7 +55,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
   //طريقة استدعاء السور function
   void loadFile(int index) async {
     //index اسم الملف بالارقام
-    var content = await rootBundle.loadString('assets/files/$index+1.txt');
+    var content = await rootBundle.loadString('assets/files/${index + 1}.txt');
     List<String> lines = content.split('\n');
     verses = lines;
     setState(() {});
@@ -65,6 +65,5 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
 class SuraNameDetailsArgs {
   String Suraname;
   int index;
-
   SuraNameDetailsArgs(this.Suraname, this.index);
 }
