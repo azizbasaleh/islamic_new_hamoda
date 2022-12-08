@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:review_islamic_mahammed_hamooda/home.dart';
 import 'package:review_islamic_mahammed_hamooda/my_theme.dart';
 import 'package:review_islamic_mahammed_hamooda/sura_details/sura_details.dart';
-
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'hadeth_details/hadeth_details.dart';
 import 'home_screen/ahadeth.dart';
 
@@ -15,6 +15,15 @@ class MyApplication extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [
+        Locale('en', ''), // English, no country code
+        Locale('ar', ''), // Spanish, no country code
+      ],
       debugShowCheckedModeBanner: false,
       initialRoute: HomePage.routeName,
       routes: {
